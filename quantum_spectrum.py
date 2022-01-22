@@ -32,6 +32,7 @@ def main():
 	rho+= amp*np.exp(-((xx-0.6)**2+(yy-0.7)**2)/2/sigma**2)/(sigma**3*np.sqrt(2*np.pi)**2)
 	rho+= amp*np.exp(-((xx-0.7)**2+(yy-0.4)**2)/2/sigma**2)/(sigma**3*np.sqrt(2*np.pi)**2)
 	rho+= amp*np.exp(-((xx-0.3)**2+(yy-0.3)**2)/2/sigma**2)/(sigma**3*np.sqrt(2*np.pi)**2)
+	
 	# normalize wavefunction to <|psi|^2>=1
 	rhobar = np.mean( rho )
 	rho /= rhobar
